@@ -4,7 +4,7 @@ An Introduction to Formal Logic
 
 .. _what-is-formal-logic:
 
-What is Formal Logic? 
+What is Formal Logic?
 =====================
 
 Logic, in the most general sense of the term, refers to the study of
@@ -40,8 +40,8 @@ Consider the following argument:
 
 .. epigraph::
 
-   Socrates is a man. Therefore, the
-   teacher of Plato was fated to die. 
+   Socrates is a man. Therefore, the teacher of Plato was fated to
+   die.
 
 This argument may be regarded as valid in the sense that the truth of
 the conclusion follows from the truth of the premise offered in its
@@ -143,7 +143,7 @@ study of logic can be made mathematical.
 
 .. _making-logic-mathematical:
 
-Making Logic Mathematical 
+Making Logic Mathematical
 =========================
 
 Logic seeks to investigate the norms that govern the activity of
@@ -161,7 +161,7 @@ such, logic is concerned with questions of the following form:
 In order to render such questions mathematically precise, the
 following tasks must be performed:
 
-#. 'Inferences' must be represented as mathematical objects. 
+#. 'Inferences' must be represented as mathematical objects.
 #. The standard for normative assessment by which a given inference is
    judged to be 'valid' or 'fallacious' must be expressed in terms of
    the possession by that inference of a mathematically well-defined
@@ -241,27 +241,22 @@ language.
 
 .. proof:definition::
 
-   An *argument* in a formal language :math:`\sL` consists of (i) a
-   possibly empty set of sentences of :math:`\sL`, the members of
-   which are referred to as the *premises* of the argument; and (ii) a
-   sentence of :math:`\sL`, referred to as the *conclusion* of the
-   argument. We denote the argument with premises :math:`\Ga` and
-   conclusion :math:`\ph` as follows:
+   An *argument* in a formal language |L| consists of (i) a possibly
+   empty set of sentences of |L| , the members of which are referred
+   to as the *premises* of the argument; and (ii) a sentence of |L|,
+   referred to as the *conclusion* of the argument. We denote the
+   argument with premises |Ga| and conclusion |ph| as follows:
    
-   .. math::
-      \begin{array}{c}
-      \underline{\hspace{0.1in}\Gamma\hspace{0.1in}}\\
-      \ph
-      \end{array}
+   .. math:: \begin{array}{c}
+      \underline{\hspace{0.1in}\Gamma\hspace{0.1in}}\\ \ph \end{array}
 
 For the sake of readability, when referring to the set of premises of
 an :term:`argument`, we will often omit the outer braces from the
-set. Thus, for example, if :math:`\Ga` is the set of sentences
+set. Thus, for example, if |Ga| is the set of sentences
 :math:`\{\psi_1,\ldots,\psi_n\}`, then the above argument may be
 denoted as follows:
 
-.. math::
-   \begin{array}{c}
+.. math:: \begin{array}{c}
    \underline{\hspace{0.1in}\psi_1,\ldots,\psi_n\hspace{0.1in}}\\ \ph
    \end{array}
 
@@ -272,16 +267,15 @@ denoted as follows:
 	   In this example, we will devise a formal language
 	   :math:`\sL_\times` suitable for expressing a very simple
 	   class of arithmetical arguments, namely, those which only
-	   consist of equations involving a single variable :math:`x`
-	   and in which both sides of the equality are expressed as
-	   the product of numbers belonging to the set
+	   consist of equations involving a single variable |x| and in
+	   which both sides of the equality are expressed as the
+	   product of numbers belonging to the set
 	   :math:`\{1,0\}`.
 
 	   The alphabet for our language is given by the set of
 	   symbols:
 
-	   .. math::
-	      \{x, 1, 0, \times, =\}
+	   .. math:: \{x, 1, 0, \times, =\}
 
 	   We refer to the symbols :math:`x, 1,` and :math:`0` as
 	   *numerals*.
@@ -297,7 +291,7 @@ denoted as follows:
 	      #. Every expression consisting of a single numeral is a
 		 numerical expression.
 
-	      #. If :math:`\al` and :math:`\be` are numerical
+	      #. If |al| and |be| are numerical
 		 expressions, then the expression :math:`\al\times\be`
 		 is a numerical expression.
 
@@ -305,8 +299,7 @@ denoted as follows:
 	   numerical expressions are all and only those expressions of
 	   :math:`\sL_\times` that are of the form:
 
-	   .. math::
-	      n_1 \times n_2 \times \cdots \times n_k,
+	   .. math:: n_1 \times n_2 \times \cdots \times n_k,
 
 	   where :math:`n_1,\ldots,n_k` are numerals.
 
@@ -317,8 +310,8 @@ denoted as follows:
 
 	      An expression of :math:`\sL_\times` is a sentence of
 	      :math:`\sL_\times` iff it is of the form
-	      :math:`\al=\be`, where :math:`\al` and :math:`\be` are
-	      numerical expressions.
+	      :math:`\al=\be`, where |al| and |be| are numerical
+	      expressions.
 
 	   In accordance with this rule, the following expressions are
 	   all sentences of the language:
@@ -328,13 +321,13 @@ denoted as follows:
 	   iii. :math:`1 \times 0 = 0 \times 1`
 	   iv. :math:`x \times x = 1`
 	   v. :math:`x \times 0 \times 1 \times x = 1`
-	   vi. :math:`x \times 1 \times 1 \times 1 = 1 \times x \times 0`
+	   vi. :math:`x \times 1 \times 1 \times 1 = 1 \times x \times
+	       0`
 
 	   An example of an argument in the formal language
 	   :math:`\sL_\times` is:
 
-	   .. math::
-	      \underline{x\times 0 = 0\times 1,\hspace{0.1in}
+	   .. math:: \underline{x\times 0 = 0\times 1,\hspace{0.1in}
 	      1\times x\times 1 = 1}\\ 1=x\hspace {0.7in}
 
 	   .. _ex-expressions-Lx:
@@ -346,13 +339,13 @@ denoted as follows:
 
 	      a. Show that the length of every sentence of
 		 :math:`\sL_\times` is odd.
-	      b. If :math:`k` is an odd number greater than 2, how
+	      b. If |k| is an odd number greater than 2, how
 		 many distinct expressions of :math:`\sL_\times` are
-		 there of length :math:`k`? How many distinct
-		 sentences of :math:`\sL_\times` are there of length
-		 :math:`k`?  Show that the probability with which a
-		 randomly chosen expression of length :math:`k` is a
-		 sentence goes to :math:`0` as :math:`k` increases.
+		 there of length |k|? How many distinct sentences of
+		 :math:`\sL_\times` are there of length |k|?  Show
+		 that the probability with which a randomly chosen
+		 expression of length |k| is a sentence goes to
+		 :math:`0` as |k| increases.
 
 	   .. _ex-trees-Lx:
 
@@ -362,40 +355,40 @@ denoted as follows:
 	      every node in the tree has either exactly two direct
 	      descendants (referred to as its 'left' and 'right'
 	      descendant, respectively), or is a terminal node (i.e.,
-	      a node with no direct descendants). Let :math:`\al` be
-	      an expression of :math:`\sL_\times`. A \textit{formation
-	      tree} for :math:`\al` is a binary tree the nodes of
-	      which are all expressions, and for which:
+	      a node with no direct descendants). Let |al| be an
+	      expression of :math:`\sL_\times`. A \textit{formation
+	      tree} for |al| is a binary tree the nodes of which are
+	      all expressions, and for which:
 
 	      1. The root node of the tree (i.e., the unique node with
-		 no parents) is :math:`\al`.
-	      2. If :math:`\be` and :math:`\ga` are the left and right
-		 descendants of the node :math:`\de`, then :math:`\de`
-		 is the expression :math:`\be\times\ga`.
+		 no parents) is |al|.
+	      2. If |be| and |ga| are the left and right
+		 descendants of the node |de|, then |de| is the
+		 expression :math:`\be\times\ga`.
 	      3. Every terminal node is an expression consisting of a
 		 single numeral.
 
 	      For example, the following is a formation tree for the
 	      expression :math:`1\times x\times 0`:
 
-	      .. math::
-	         \textrm{\synttree[$1\times x \times 0$ [$1$][$x \times 0$[$x$][$0$]]]}
+	      .. math:: \textrm{\synttree[$1\times x \times 0$
+	         [$1$][$x \times 0$[$x$][$0$]]]}
 	      
-	      a. An expression :math:`\al` is a :term:`numerical
-                 expression` iff there is a formation tree for
-                 :math:`\al`, but a single :term:`numerical
-                 expression` can have multiple distinct formation
-                 trees. Identify three distinct formation trees for
-                 the :term:`numerical expression` :math:`0\times
-                 1\times x\times 0`.
+	      a. An expression |al| is a :term:`numerical expression`
+                 iff there is a formation tree for |al|, but a single
+                 :term:`numerical expression` can have multiple
+                 distinct formation trees. Identify three distinct
+                 formation trees for the :term:`numerical expression`
+                 :math:`0\times 1\times x\times 0`.
 
 	      b. Show that there are exactly
 
 		 .. math::
-		    \frac{(2k-2)!}{k!(k-1)!}=\frac{(2k-2)\cdot(2k-3)\cdots(k+1)}{(k-1)\cdot(k-2)\cdots 1}
+		    \frac{(2k-2)!}{k!(k-1)!}=\frac{(2k-2)\cdot(2k-3)\cdots(k+1)}{(k-1)\cdot(k-2)\cdots
+		    1}
 
 		 distinct formation trees for any numerical expression
-		 involving :math:`k` numerals.
+		 involving |k| numerals.
 
 	      c. Suppose we extend the language :math:`\sL_\times` by
                  adding to its alphabet the left and right
@@ -410,6 +403,148 @@ denoted as follows:
 Semantic Validity
 -----------------
 
+Now that we have explained how inferences can be viewed as
+mathematical objects by representing them as arguments in a formal
+language, the next task that we face is to formulate a mathematically
+precise standard of argumentative validity. As a first step towards
+doing so, it will be helpful to consider in informal terms what we
+mean when we say that an argument is valid. Consider the following
+hackneyed syllogism:
+
+.. epigraph::
+
+   All men are mortal. Socrates is a man. Therefore, Socrates is
+   mortal.
+   
+Intuitively, this is a valid argument, but what is it about this
+argument that makes it valid? The most immediate answer is that the
+argument is valid because its conclusion necessarily follows from its
+premises. But, in what precise sense of 'necessity' does Socrates'
+mortality necessarily follow from Socrates' being a man and from the
+fact that all men are mortal?
+	      
+In general, to assert of a claim that it is 'necessarily' true is to
+assert not only that that claim is true, but also that its truth is
+independent of certain features of the context of utterance in which
+it is affirmed. The precise sense of the modality is determined by
+which features of the context are deemed to be incidental. Thus, to
+say that it is necessarily the case that if the premises of the above
+argument are true, so is its conclusion, is to affirm both:
+
+1. If 'All men are mortal' and 'Socrates is a man' are true, then
+   'Socrates is mortal' is true.
+
+2. Claim 1 would be true regardless of certain features of the context
+   of utterance in which it is affirmed.
+
+But what features of the context do we have it in mind to ignore when
+we describe Claim 1 as 'logically' necessary? What we mean,
+presumably, is that Claim 1 would be true no matter who (or what) the
+name 'Socrates' refers to, and no matter what properties are
+designated by the phrases 'man' and 'mortal'. Thus, for example, if
+the name 'Socrates' were to refer to Kurt G\ |ouml|\ del, the phrase
+'man', to the property of being German, and the phrase 'mortal' to the
+property of being a poor logician, it would still follow from the
+truth of the sentences 'All men are mortal' and 'Socrates is a man',
+that the sentence 'Socrates is mortal' is true (for, if all Germans
+are poor logicians, and Kurt G\ |ouml|\ del is a German, then G\
+|ouml|\ del, too, is a poor logician).
+
+Note that it is crucial to this line of reasoning that the meaning of
+the linguistic constructs 'All :math:`\cdots` are :math:`--`' and
+':math:`\cdots` is a :math:`--`', as they appear in the premises and
+conclusion of the argument, are taken to operate in their usual way,
+i.e., the former asserts that all objects possessing the property
+designated by ':math:`\cdots`' also possess the property designated by
+':math:`--`', and the latter asserts that the object named by
+':math:`\cdots`' possesses the property designated by ':math:`--`'. If
+the meaning of these constructs were allowed to vary along with
+'Socrates', 'mortal', and 'man' (e.g., if 'All :math:`\cdots` are
+:math:`--`' were taken to mean that *some* objects possessing property
+':math:`\cdots`', possess property ':math:`--`') then there may be
+ways of interpreting the premises and conclusion ofthe argument
+according to which the premises are true and the conclusion false.
+
+As this example illustrates, when we assess the validity of an
+argument we take for granted a distinction between those elements of
+the syntax that are taken to have a fixed meaning and those elements
+of the syntax whose meanings are allowed to vary. The former are
+referred to as the *formal* elements of the syntax and the latter as
+the *material* elements of the syntax. To say that an argument is
+valid is to assert that, under the assumption that the formal elements
+of the syntax are given their usual meaning, the truth of the
+argument's conclusion follows from the truth of its premises, no
+matter how the material elements of the syntax are interpreted. Thus,
+whether or not an argument is valid depends only on the meanings of
+the formal elements of the syntax. In this sense, validity is a formal
+property of arguments. However, the distinction between the formal and
+material elements of the syntax may vary from one system of logic to
+another.
+
+As an example, consider the following elementary arithmetical
+argument: :math:`x + 2y = -2` and :math:`y > 1`. Therefore, :math:`8 <
+-2x`. To say that this argument is (arithmetically) valid is to assert
+that no matter what numbers are referred to by the variables |x| and
+:math:`y`, if it is true that :math:`x + 2y = -2` and :math:`y > 1`,
+then it is also true that :math:`8 < -2x`. Here we are assuming that
+the numerals ':math:`1`', ':math:`2`', and ':math:`8`' refer to the
+numbers :math:`1, 2`, and :math:`8`, respectively; that the symbol
+':math:`+`' refers to the operation of addition; and that the symbols
+':math:`=`', ':math:`<`', and ':math:`>`' refer to the relations of
+equality, being less than, and being greater than, respectively. In
+the language of arithmetic, these are formal elements of the
+syntax. The material elements of the syntax are the variables, such as
+':math:`x`' and ':math:`y`'.
+
+Let us now undertake to formulate this conception of argumentative
+validity in mathematical terms, by first making precise the notion of
+'necessary truth preservation'.
+
+.. _def-valuation:
+
+.. proof:definition::
+
+      A *valuation* of a formal language |L| is a function which
+      assigns to each sentence of |L| one of the values in the set
+      :math:`\{\true, \false\}`.
+
+We refer to the objects |T| and |F| as *truth-values*. [#true-false]_
+When :math:`val(\ph)=\true`, we say that the sentence |ph| is true
+under the valuation :math:`val`, and when :math:`val(\ph)=\false` we
+say that |ph| is false under this valuation.
+
+Whenever we assess the validity of an argument, we will always do so
+relative to a certain set of valuations, which serve to indicate all
+the possible assignments of truth and falsity that are countenanced in
+the assessment. The validity of an argument expresses the fact that
+for every valuation in this set, if all the premises of the argument
+are true, then the conclusion is true as well.
+
+.. _def-valid-wrt-valuations:
+
+.. proof:definition::
+
+      The argument
+     
+      .. math::
+	 \begin{array}{c}
+	 \underline{\hspace{0.1in}\Gamma\hspace{0.1in}}\\
+	 \ph
+	 \end{array}
+
+      is *valid* with respect to the set of valuations :math:`V` if, for
+      every valuation :math:`val\in V`, the following is true: if
+      :math:`val(\psi)=\true`, for all :math:`\psi\in\Ga`, then
+      :math:`val(\ph)=\true`. To express this fact, we write:
+
+      .. math::
+	 \Ga\models_{V}\ph
+
+      If |Ga| is the set :math:`\{\psi_1,\ldots,\psi_n\}`, we write
+      :math:`\psi_1,\ldots,\psi_n\models_{V}\ph` to express the fact
+      that :math:`\Ga\models_{V}\ph`. Moreover, we write
+      :math:`\models_{V}\ph` as shorthand for
+      :math:`\emptyset\models\ph`.
 
 Chapter Exercises
 =================
@@ -419,25 +554,25 @@ Chapter Exercises
 
    a. Show that the length of every sentence of :math:`\sL_\times` is
       odd.
-   b. If :math:`k` is an odd number greater than 2, how many distinct
-      expressions of :math:`\sL_\times` are there of length :math:`k`?
+   b. If |k| is an odd number greater than 2, how many distinct
+      expressions of :math:`\sL_\times` are there of length |k|?
       How many distinct sentences of :math:`\sL_\times` are there of
-      length :math:`k`?  Show that the probability with which a
-      randomly chosen expression of length :math:`k` is a sentence
-      goes to :math:`0` as :math:`k` increases.
+      length |k|?  Show that the probability with which a
+      randomly chosen expression of length |k| is a sentence
+      goes to :math:`0` as |k| increases.
 
 2. A *binary tree* is a finite tree structure in which every node in
    the tree has either exactly two direct descendants (referred to as
    its 'left' and 'right' descendant, respectively), or is a terminal
-   node (i.e., a node with no direct descendants). Let :math:`\al` be
+   node (i.e., a node with no direct descendants). Let |al| be
    an expression of :math:`\sL_\times`. A \textit{formation tree} for
-   :math:`\al` is a binary tree the nodes of which are all
+   |al| is a binary tree the nodes of which are all
    expressions, and for which:
 
    1. The root node of the tree (i.e., the unique node with no
-      parents) is :math:`\al`.
-   2. If :math:`\be` and :math:`\ga` are the left and right
-      descendants of the node :math:`\de`, then :math:`\de` is the
+      parents) is |al|.
+   2. If |be| and |ga| are the left and right
+      descendants of the node |de|, then |de| is the
       expression :math:`\be\times\ga`.
    3. Every terminal node is an expression consisting of a single
       numeral.
@@ -448,8 +583,8 @@ Chapter Exercises
    .. math::
       \textrm{\synttree[$1\times x \times 0$ [$1$][$x \times 0$[$x$][$0$]]]}
 	      
-   a. An expression :math:`\al` is a :term:`numerical expression` iff
-      there is a formation tree for :math:`\al`, but a single
+   a. An expression |al| is a :term:`numerical expression` iff
+      there is a formation tree for |al|, but a single
       :term:`numerical expression` can have multiple distinct
       formation trees. Identify three distinct formation trees for the
       :term:`numerical expression` :math:`0\times 1\times x\times 0`.
@@ -460,7 +595,7 @@ Chapter Exercises
 	 \frac{(2k-2)!}{k!(k-1)!}=\frac{(2k-2)\cdot(2k-3)\cdots(k+1)}{(k-1)\cdot(k-2)\cdots 1}
 
       distinct formation trees for any numerical expression involving
-      :math:`k` numerals.
+      |k| numerals.
 
    c. Suppose we extend the language :math:`\sL_\times` by adding to
       its alphabet the left and right parentheses, '(' and
@@ -468,19 +603,18 @@ Chapter Exercises
       and a formation tree so as to ensure that every :term:`numerical
       expression` has exactly one formation tree.
 
-
 Glossary of Defined Terms
 =========================
 
 .. glossary::
 
    argument
-       An *argument* in a formal language :math:`\sL` consists
-       of (i) a possibly empty set of sentences of :math:`\sL`, the
+       An *argument* in a formal language |L| consists
+       of (i) a possibly empty set of sentences of |L|, the
        members of which are referred to as the *premises* of the
-       argument; and (ii) a sentence of :math:`\sL`, referred to as
+       argument; and (ii) a sentence of |L|, referred to as
        the *conclusion* of the argument. We denote the argument with
-       premises :math:`\Ga` and conclusion :math:`\ph` as follows:
+       premises |Ga| and conclusion |ph| as follows:
 
        .. math::
 	  \begin{array}{c}
@@ -496,9 +630,38 @@ Glossary of Defined Terms
        #. Every expression consisting of a single numeral is a
 	  numerical expression.
 
-       #. If :math:`\al` and :math:`\be` are numerical
+       #. If |al| and |be| are numerical
 	  expressions, then the expression :math:`\al\times\be`
 	  is a numerical expression.
+
+   validity
+       The argument
+
+       .. math::
+	  \begin{array}{c}
+	  \underline{\hspace{0.1in}\Gamma\hspace{0.1in}}\\
+	  \ph
+	  \end{array}
+
+       is *valid* with respect to the set of valuations :math:`V` if,
+       for every valuation :math:`val\in V`, the following is true: if
+       :math:`val(\psi)=\true`, for all :math:`\psi\in\Ga`, then
+       :math:`val(\ph)=\true`. To express this fact, we write:
+
+       .. math::
+	  \Ga\models_{V}\ph
+
+       If |Ga| is the set :math:`\{\psi_1,\ldots,\psi_n\}`, we write
+       :math:`\psi_1,\ldots,\psi_n\models_{V}\ph` to express the fact
+       that :math:`\Ga\models_{V}\ph`. Moreover, we write
+       :math:`\models_{V}\ph` as shorthand for
+       :math:`\emptyset\models\ph`.
+
+   valuation
+      A *valuation* of a formal language |L| is a function which
+      assigns to each sentence of |L| one of the values in the set
+      :math:`\{\true, \false\}`.
+
    
 .. rubric:: Footnotes
 
@@ -523,3 +686,9 @@ Glossary of Defined Terms
    even in a language whose grammar is not rich enough to capture the
    difference between active and passive voice constructions.
    
+.. [#true-false]
+
+   There is nothing special about the symbols :math:`\true` and
+   :math:`\false`, apart from their mnemonic value. We could have just
+   as well used :math:`1` and :math:`0`, or any other two distinct
+   objects to serve as names for truth and falsity. 
